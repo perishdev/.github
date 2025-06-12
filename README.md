@@ -1,3 +1,3 @@
-# Perish Dev
+# .github
 
-Embracing decay, evolving ideas!
+Community health files for the [`@perishdev`](https://github.com/perishdev/) organization.
