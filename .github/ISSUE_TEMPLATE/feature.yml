@@ -1,0 +1,38 @@
+name: "✨ Feature Request"
+description: Suggest an idea or enhancement.
+title: "feat: <title>"
+labels: ["enhancement", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for the suggestion! Please describe the problem you're trying to
+        solve before the solution — it helps us understand the underlying need.
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: First checks
+      options:
+        - label: I searched [existing issues and discussions](https://github.com/search?q=org%3Aperishdev&type=issues) and didn't find a duplicate.
+          required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem / motivation
+      description: What problem are you trying to solve? What's the use case?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed solution
+      description: Describe what you'd like to happen.
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+      description: Any alternative solutions or workarounds you've considered.
+    validations:
+      required: false
