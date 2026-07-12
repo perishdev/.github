@@ -1,0 +1,45 @@
+labels: [question]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for your interest in the project! 🚀
+
+        Please fill out the sections below. Asking questions in a structured way
+        makes it much easier for someone to help you — and you may well find the
+        answer yourself while completing the checklist.
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: First checks
+      description: Please confirm all of the following.
+      options:
+        - label: I added a descriptive title.
+          required: true
+        - label: I used GitHub search to look for a similar question and didn't find it.
+          required: true
+        - label: I read the project documentation and didn't find an answer.
+          required: true
+  - type: textarea
+    id: question
+    attributes:
+      label: Question
+      description: What are you trying to do, and where are you stuck?
+    validations:
+      required: true
+  - type: textarea
+    id: example
+    attributes:
+      label: Example
+      description: |
+        A self-contained, [minimal, reproducible example](https://stackoverflow.com/help/minimal-reproducible-example).
+        If someone can copy, run, and see it, the chance of getting help goes up a lot.
+    validations:
+      required: false
+  - type: input
+    id: version
+    attributes:
+      label: Version
+      description: Which version of the project are you using?
+    validations:
+      required: false

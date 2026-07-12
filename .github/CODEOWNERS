@@ -1,0 +1,9 @@
+# Code owners for the perishdev/.github repository.
+# These owners are requested for review on every pull request.
+# See: https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners
+#
+# Most specific match wins: if you add a more specific rule below the glob,
+# remember to also list the global owners on that rule.
+
+# Global owners
+*       @perishdev/maintainers

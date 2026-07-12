@@ -1,0 +1,26 @@
+name: "📚 Documentation"
+description: Report something wrong, unclear, or missing in the docs.
+title: "docs: <title>"
+labels: ["documentation", "triage"]
+body:
+  - type: textarea
+    id: location
+    attributes:
+      label: Location
+      description: Which page, file, or section is affected? A URL or path is ideal.
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: What's wrong or missing?
+      description: Describe the issue — incorrect, outdated, unclear, or absent content.
+    validations:
+      required: true
+  - type: textarea
+    id: suggestion
+    attributes:
+      label: Suggested improvement
+      description: If you have one, suggest how it could be fixed or worded.
+    validations:
+      required: false
